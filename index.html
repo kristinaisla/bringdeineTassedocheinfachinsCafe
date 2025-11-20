@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<audio id="bgm" src="https://www.orangefreesounds.com/wp-content/uploads/2015/10/8-bit-music-loop.mp3" autoplay loop muted></audio>
+<script>
+  const bgm = document.getElementById("bgm");
+  let activated = false;
+
+  async function activateSound() {
+    if (!activated) {
+      bgm.muted = false;
+      bgm.volume = 0.35;
+      activated = true;
+      try { await bgm.play(); } 
+      catch (err) { console.warn("Audio konnte nicht gestartet werden:", err); }
+    }
+  }
+
+  window.addEventListener("click", activateSound, { once: true });
+</script>
+<div class="marquee">
+  <div class="track">
+    <span style="font-family: 'Courier New', monospace; font-size: 40px;">
+      ☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕ Stelle deine Tasse ab 
+      ☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕ Stelle deine Tasse ab 
+      ☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕ Stelle deine Tasse ab 
+      ☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕☕ Stelle deine Tasse ab
+    </span>
+  </div>
+</div>
+<div class="tasse">
+  <img src="Tasse2.png">
+</div>
+ <div class="Schild800">
+  <img src="Schild800.png">
+</div>
+<div class="Schild500">
+  <img src="Schild500.png">
+</div>
+<div class="Schild200">
+  <img src="Schild200.png">
+</div>
+<div class="Schild50">
+  <img src="Schild50.png">
+</div>
+<div class="kiste drop-ziel">
+<img src="Kiste.png">
+  <div class="popup"><img src="Schild1.png">
+  <audio id="gameover" src="https://www.orangefreesounds.com/wp-content/uploads/2014/06/Game-over-sound-effect.mp3"></audio>
+</div>
+</div>
+
+<div class="Eimer drop-ziel">
+<img src="Eimer.png">
+  <div class="popup"><img src="Schild2.png">
+    <audio id="gameover" src="https://www.orangefreesounds.com/wp-content/uploads/2014/06/Game-over-sound-effect.mp3"></audio>
+  </div>
+</div>
+
+<div class="Becken drop-ziel">
+<img src="Waschbecken.png">
+  <div class="popup"><img src="Schild3.png"></div>
+  <audio id="gameover" src="https://www.orangefreesounds.com/wp-content/uploads/2014/06/Game-over-sound-effect.mp3"></audio>
+</div>
+
+<div class="mensa drop-ziel">
+  <img src="Cafe.png">
+  <div class="popup"><img src="Barista1.png"></div>
+</div>
+<script src="script.js"></script>
+</body>
+
+</html>

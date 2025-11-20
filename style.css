@@ -1,0 +1,121 @@
+body{
+     background-image: url(Hintergund2.png);
+    background-repeat: no-repeat;      
+    background-size: 100% 100%;             
+    background-position: top center;
+    height: 6000px;
+    margin-top: 50px;
+}
+.marquee {
+  position: fixed;
+  overflow: hidden;
+  white-space: nowrap;
+  z-index: 999;
+}
+
+.track {
+  display: inline-block;
+  animation: scroll 25s linear infinite;
+}
+
+@keyframes scroll {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+.tasse {
+  cursor: pointer;
+  position: absolute;
+  top: 210px;
+  left: 50%;
+  touch-action: none;
+  user-select: none;
+  z-index: 9999;
+}
+
+.kiste {
+position: absolute;
+ top: 1200px;    
+ left: 25%;
+}
+
+.kiste .popup {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  
+}
+.Eimer{
+ position: absolute;
+ top: 2800px;    
+ right: -50px; 
+}
+
+.Eimer .popup{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.Becken{
+   position: absolute;
+ top: 4500px;    
+left: 0px;
+}
+.Becken .popup{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.mensa {
+  position: absolute;
+  top: 5500px;
+  left: 100px;
+}
+
+.mensa .popup {
+  position: fixed;
+  top: 20%;
+  left: 30%;
+}
+
+.drop-ziel .popup {
+  display: none;
+  pointer-events: none;
+}
+
+.drop-ziel.hat-tasse .popup {
+  display: block;
+}
+*{
+  transform-origin: left top;
+}
+.Schild800 img {
+     transform: scale(0.5);
+  position: absolute;
+  top: 550px;       
+  right: -400px;
+}
+.Schild500 img {
+     transform: scale(0.5);
+  position: absolute;
+  top: 2200px;      
+  left: 50px;
+}
+.Schild200 img {
+     transform: scale(0.5);
+  position: absolute;
+  top: 3800px;       
+  left: 50px;
+}
+.Schild50 img {
+     transform: scale(0.5);
+  position: absolute;
+  top: 5100px;       
+  right: -400px;
+}
+

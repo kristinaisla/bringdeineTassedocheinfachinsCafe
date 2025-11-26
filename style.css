@@ -3,7 +3,7 @@ body{
     background-repeat: no-repeat;      
     background-size: 100% 100%;             
     background-position: top center;
-    height: 6000px;
+    height: 6200px;
     margin-top: 50px;
 }
 .marquee {
@@ -72,7 +72,7 @@ position: absolute;
 
 .Becken{
    position: absolute;
- top: 4500px;    
+ top: 3750px;    
 left: 0px;
 }
 .Becken .popup{
@@ -84,7 +84,7 @@ left: 0px;
 
 .mensa {
   position: absolute;
-  top: 5500px;
+  top: 6000px;
   left: 100px;
 }
 
@@ -120,7 +120,7 @@ left: 0px;
 .Schild200 img {
      transform: scale(0.5);
   position: absolute;
-  top: 3800px;       
+  top: 3400px;       
   left: 50px;
 }
 .Schild50 img {
@@ -136,4 +136,28 @@ left: 0px;
   right:100px;
   z-index: 9999;
 
+}
+.meme1 img{
+    transform: scale(0.7);
+  position: absolute;
+  top: 830px;       
+  left: 150px;
+}
+.meme2 img{
+    transform: scale(0.7);
+  position: absolute;
+  top: 2430px;       
+  right: -100px;
+}
+.meme3 img{
+    transform: scale(0.7);
+  position: absolute;
+  top: 4350px;       
+  right: -100px;
+}
+.meme4 img{
+  transform: scale(0.7);
+  position: absolute;
+  top: 5300px;       
+  left: 100px;
 }

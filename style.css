@@ -12,7 +12,18 @@ body{
   white-space: nowrap;
   z-index: 999;
 }
-
+.marquee2 {
+    position: absolute;
+    top: 2000px;
+  z-index: 999;
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+}
+.track2{
+  display: inline-flex;
+  animation: scroll 1s linear infinite;
+}
 .track {
   display: inline-block;
   animation: scroll 25s linear infinite;
@@ -118,4 +129,11 @@ left: 0px;
   top: 5100px;       
   right: -400px;
 }
+.taube img{
+  transform: scale (0.1);
+  position:absolute;
+  top: 4970px;
+  right:100px;
+  z-index: 9999;
 
+}
